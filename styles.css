@@ -3,12 +3,29 @@ body {
     height: 100%;
 }
 
-h1 {
-  background: linear-gradient(to right, green, blue, red, violet);
+.header {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.header img {
+  height: 116px;
+  padding-top: 27px;
+  vertical-align: top;
+}
+
+.header h1 {
+  background: linear-gradient(to right, green, red, deepskyblue, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 72px;
   text-align: center;
+  display: inline-block;
+}
+
+.header a {
+  float: right;
 }
 
 .main-container {
@@ -28,6 +45,14 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-left: 4rem;
+}
+
+.configuration .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  max-width: 550px;
 }
 
 .container {
