@@ -65,12 +65,16 @@ function handleUserInput(event) {
   }
 
   else if(!isSimonPlaying){
-    document.documentElement.style.setProperty('--animation_speed', '0.3s');
-
     buttonPressed = availableButtons.find(button => button.key == event.detail);
-    animateButton(buttonPressed);
-    userPath.push(buttonPressed);
-    compareUserVsSimonPaths();
+
+    // If the player pressed one of the available buttons
+    if (buttonPressed) {
+      document.documentElement.style.setProperty('--animation_speed', '0.3s');
+
+      animateButton(buttonPressed);
+      userPath.push(buttonPressed);
+      compareUserVsSimonPaths();
+    }
   }
 }
 
