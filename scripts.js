@@ -29,6 +29,8 @@ function startNewGame() {
   
   
 
+  
+  
   gamepad_buttons.forEach(button => {
     availableButtons.push(
       {
