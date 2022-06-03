@@ -22,6 +22,12 @@ function startNewGame() {
   simonPath = [];
   userPath = [];
   availableButtons = [];
+  
+  
+  
+  foo = "test"
+  
+  
 
   gamepad_buttons.forEach(button => {
     availableButtons.push(
