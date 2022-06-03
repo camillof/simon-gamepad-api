@@ -24,7 +24,7 @@ function startNewGame() {
   availableButtons = [];
   
   
-  const fooo += "            aa "
+  const fooo += "            aa ";;;
   
   
 
